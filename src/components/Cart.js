@@ -1,9 +1,6 @@
 import { FaFire, FaRegClock } from "react-icons/fa";
 import { IoRestaurantOutline } from "react-icons/io5";
-
-
 const Cart = ({ recipeinfo }) => {
-  console.log(recipeinfo);
   const {
     image,
     cuisine,
@@ -14,7 +11,7 @@ const Cart = ({ recipeinfo }) => {
     difficulty,
   } = recipeinfo;
   return (
-    <div className="w-full md:w-3/12 bg-white mt-10 shadow-md px-3 py-2 rounded-lg">
+    <div className="w-full bg-white mt-10 shadow-md px-3 py-2 rounded-lg">
       <div className="w-full">
         <img className=" h-48 w-full rounded-lg" src={image} />
       </div>
