@@ -12,7 +12,7 @@ const RecipeList =  async ()=>{
           {recipesList && recipesList.length > 0 ? (
             recipesList.map((recipe) => (
               <Link
-                className="w-3/12"
+                className="w-full md:w-3/12"
                 key={recipe.id}
                 href={`recipe-menu/${recipe.id}`}
               >

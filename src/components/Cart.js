@@ -11,13 +11,13 @@ const Cart = ({ recipeinfo }) => {
     difficulty,
   } = recipeinfo;
   return (
-    <div className="w-full bg-white mt-10 shadow-md px-3 py-2 rounded-lg">
+    <div className="w-full bg-white md:mt-10 shadow-md px-3 py-2 rounded-lg">
       <div className="w-full">
         <img className=" h-48 w-full rounded-lg" src={image} />
       </div>
       <div className="mt-3">
         <div className="w-full flex justify-between items-center">
-          <h1 className="font-bold text-lg">{name}</h1>
+          <h1 className="font-bold text-lg truncate">{name}</h1>
           <h1 className="px-2 py-2  bg-green-500 rounded-2xl text-white font-bold">
             {difficulty}
           </h1>
